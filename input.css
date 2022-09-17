@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Outfit';
+}
+
+/* &* HERO-BG-CIRCLES  */
+.hero-circle-1 {
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    background-color: #7D7ED6;
+    top: -15%;
+    left: 10%;
+    border-radius: 100%;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.hero-circle-2 {
+    position: absolute;
+    overflow: hidden;
+    min-height: 250vh;
+    width: 100vh;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+}
+
+.hero-circle-2::before {
+    content: '';
+    translate: 30%;
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    right: 0;
+    top: 65%;
+    border-radius: 100%;
+    background-color: rgba(149, 208, 208, 0.8);
+    filter: blur(100px);
+}
+
+/* &* ANALYTICS-BG-CIRCLES  */
+.analytics-bg-circles {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(125, 126, 214, 0.8);
+    border-radius: 9999px;
+    z-index: -1;
+    filter: blur(200px);
+    left: -10%;
+    bottom: -35%;
+}
+
+/* &* ANALYTICS-BG-CIRCLES  */
+.testimonial-bg-circles {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(149, 208, 208, 0.8);
+    border-radius: 9999px;
+    z-index: -1;
+    filter: blur(200px);
+    right: -10%;
+    top: -35%;
+}
+
+/* hero-section-btn */
+#btns {
+    margin-top: 2.5rem;
+}
